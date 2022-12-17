@@ -31,7 +31,7 @@
 
     <div class="main-content calculator">
         <div class="page-title">
-            <p>Select which items you think you will need. When you’re finished, scroll down to see your total cost.</p>
+            <p>Select which items you think you will need to calculate your move-in cost.</p>
         </div>
         <div class="main-calculator">
             <div class="title">
@@ -47,34 +47,34 @@
                         </button>
                         <button class="items-container" id="water" value="12">
                             <div class="item-image">Water - Pack of 12</div>
-                            <div class="item-price">$10.00</div>
+                            <div class="item-price">$12.00</div>
                         </button>
                     </div>
                 </div>
                 <div class="calculator-items-section">
                     <p>Toiletries</p>
                     <div class="individual-items" style="display: flex;">
-                        <div class="items-container">
-                            <div class="item-image">Image here</div>
-                            <div class="item-price">$0.00</div>
-                        </div>
-                        <div class="items-container">
-                            <div class="item-image">Image here</div>
-                            <div class="item-price">$0.00</div>
-                        </div>
+                        <button class="items-container" id="toilet-paper" value="15">
+                            <div class="item-image">Toilet Paper - Pack of 12</div>
+                            <div class="item-price">$15.00</div>
+                        </button>
+                        <button class="items-container" id="hand-soap" value="5">
+                            <div class="item-image">Hand Soap</div>
+                            <div class="item-price">$5.00</div>
+                        </button>
                     </div>
                 </div>
                 <div class="calculator-items-section">
                     <p>Cleaning</p>
                     <div class="individual-items" style="display: flex;">
-                        <div class="items-container">
-                            <div class="item-image">Image here</div>
-                            <div class="item-price">$0.00</div>
-                        </div>
-                        <div class="items-container">
-                            <div class="item-image">Image here</div>
-                            <div class="item-price">$0.00</div>
-                        </div>
+                        <button class="items-container" id="wipes" value="7">
+                            <div class="item-image">Disinfectant Wipes</div>
+                            <div class="item-price">$7.00</div>
+                        </button>
+                        <button class="items-container" id="paper-towels" value="20">
+                            <div class="item-image">Paper Towels - Pack of 10</div>
+                            <div class="item-price">$20.00</div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -82,20 +82,23 @@
                 <div class="total-cost" style="display: flex;">
                     <p>Total cost</p>
                     <div style="font-size: 30px;">$<span id="final-cost">0.00</span></div>
-                    
+
                 </div>
                 <div class="individual-section-costs">
                     <div class="individual-section-container">
-                        <p>Food:</p> 
-                        <span id="final-cost-food">$0.00</span>
+                        <p>Food:</p>
+                        <div style="font-size: 30px;">$<span id="final-cost-food">0.00</span>
+                        </div>
                     </div>
                     <div class="individual-section-container">
                         <p>Cleaning:</p>
-                        <span id="final-cost-cleaning">$0.00</span>
-                    </div> 
+                        <div style="font-size: 30px;">$<span id="final-cost-cleaning">0.00</span>
+                        </div>
+                    </div>
                     <div class="individual-section-container">
                         <p>Toiletries:</p>
-                        <span id="final-cost-toletries">$0.00</span>
+                        <div style="font-size: 30px;">$<span id="final-cost-toiletries">0.00</span>
+                        </div>
                     </div>
                 </div>
             </div>
