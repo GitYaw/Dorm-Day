@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+    <!-- Navigation bar -->
+    <nav class="navigation">
+        <!-- Put in two divs, or "containers", to separate left and right side information" -->
+        <div class="nav left-side">
+            <!-- Left side has logo and links -->
+            <div class="logo">
+                <a href="/index.html">Logo</a>
+            </div>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/">Contact</a>
+            </div>
+        </div>
+        <div class="nav right-side">
+            <!-- Right side has calculate button -->
+            <a href="/">Calculate</a>
+        </div>
+    </nav>
+
+    <div class="main-content calculator">
+        <div class="page-title">
+            <p>Select which items you think you will need. When you’re finished, scroll down to see your total cost.</p>
+        </div>
+        <div class="main-calculator">
+            <div class="title">
+                <h1>My Items</h1>
+            </div>
+            <div class="calculator-items">
+                <div class="calculator-items-section">
+                    <p>Food</p>
+                    <div class="individual-items" style="display: flex;">
+                        <button class="items-container" id="ramen" value="10">
+                            <div class="item-image">Image here</div>
+                            <div class="item-price">$10.00</div>
+                        </button>
+                        <div class="items-container">
+                            <div class="item-image">Image here</div>
+                            <div class="item-price">$0.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-items-section">
+                    <p>Toiletries</p>
+                    <div class="individual-items" style="display: flex;">
+                        <div class="items-container">
+                            <div class="item-image">Image here</div>
+                            <div class="item-price">$0.00</div>
+                        </div>
+                        <div class="items-container">
+                            <div class="item-image">Image here</div>
+                            <div class="item-price">$0.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-items-section">
+                    <p>Cleaning</p>
+                    <div class="individual-items" style="display: flex;">
+                        <div class="items-container">
+                            <div class="item-image">Image here</div>
+                            <div class="item-price">$0.00</div>
+                        </div>
+                        <div class="items-container">
+                            <div class="item-image">Image here</div>
+                            <div class="item-price">$0.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-cost-section">
+                <div class="total-cost" style="display: flex;">
+                    <p>Total cost</p>
+                    <div style="font-size: 30px;">$<span id="final-cost">0.00</span></div>
+                    
+                </div>
+                <div class="individual-section-costs">
+                    <div class="individual-section-container">
+                        <p>Food:</p> 
+                        <span id="final-cost-food">$0.00</span>
+                    </div>
+                    <div class="individual-section-container">
+                        <p>Cleaning:</p>
+                        <span id="final-cost-cleaning">$0.00</span>
+                    </div> 
+                    <div class="individual-section-container">
+                        <p>Toiletries:</p>
+                        <span id="final-cost-toletries">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
