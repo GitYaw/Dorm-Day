@@ -1,19 +1,52 @@
-//FIXME: Add calculator link to menus
+///define categories at start
 
-// Variables
-let ramen = document.getElementById('ramen');
-let ramenCost = parseInt(ramen.value);
+const True = "true";
+const False = "false";
 
-let finalCost = document.getElementById('final-cost');
+document.querySelectorAll('.items-container').forEach(item => {
+    item.addEventListener('click', event => {
+        let sign = 1;
+        if (item.dataset.selected == False) {
+            item.dataset.selected = True;
+        } else {
+            sign = -1;
+            item.dataset.selected = False;
+        }
 
-let costOfItems = 0;
-
-// Functions
-ramen.addEventListener('click', function () {
-    costOfItems += ramenCost;
-    finalCost.innerHTML = costOfItems.toFixed(2);
-    console.log(finalCost);
+        let amount = sign * parseInt(item.value);
+        let section = item.dataset.type;
+        updateTotals(amount, section);
+    })
 })
+
+let finalCost = 0;
+let finalCostLabel = document.getElementById('final-cost')
+let foodCost = 0;
+let foodCostLabel = document.getElementById('final-cost-food')
+let toiletriesCost = 0;
+let toiletriesCostLabel = document.getElementById('final-cost-toiletries')
+let cleaningCost = 0;
+let cleaningCostLabel = document.getElementById('final-cost-cleaning')
+
+const FOOD = "food";
+const TOILETRIES = "toiletries";
+const CLEANING = "cleaning";
+
+function updateTotals(amount, section) {
+    finalCost = finalCost + amount;
+    finalCostLabel.innerHTML = finalCost.toFixed(2);
+
+    if (section = FOOD) {
+        foodCost = foodCost + amount;
+        foodCostLabel.innerHTML = foodCost.toFixed(2);
+    } else if (section = TOILETRIES) {
+        toiletriesCost = toiletriesCost + amount;
+        toiletriesCostLabel.innerHTML = toiletriesCost.toFixed(2);
+    } else if (section = CLEANING) {
+        cleaningCost = cleaningCost + amount;
+        cleaningCostLabel.innerHTML = cleaningCost.toFixed(2);
+    }
+}
 
 //#region Testing
 // let finalCost = 0;
