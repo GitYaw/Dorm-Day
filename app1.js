@@ -1,5 +1,3 @@
-///define categories at start
-
 const True = "true";
 const False = "false";
 
