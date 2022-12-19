@@ -3,15 +3,17 @@ const False = "false";
 
 document.querySelectorAll('.items-container').forEach(item => {
     item.addEventListener('click', event => {
-        let sign = 1;
+        let amount;
         if (item.dataset.selected == False) {
             item.dataset.selected = True;
+            amount = parseInt(item.value);
         } else {
-            sign = -1;
+            amount = parseInt(-1 * item.value)
             item.dataset.selected = False;
         }
 
-        let amount = sign * parseInt(item.value);
+        console.log(amount);
+        console.log(item);
         let section = item.dataset.type;
         updateTotals(amount, section);
     })
