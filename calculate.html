@@ -4,109 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/calculate.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/body.css">
+    <link rel="stylesheet" href="/css/navigationbar.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body class="body">
 
-    <!-- Navigation bar -->
-    <nav class="navigation">
-        <!-- Put in two divs, or "containers", to separate left and right side information" -->
-        <div class="nav left-side">
-            <!-- Left side has logo and links -->
-            <div class="logo">
-                <a href="/index.html">Logo</a>
+            <!-- Navigation Bar (Top) -->
+            <header>
+                <div class="splash_navbar">
+                    <a href="/index.html" class="splash_logo">
+                       Logo
+                    </a>
+                    <div class="splash_right_side_navbar">
+                        <nav class="splash_right_side_navbar_items">
+                            <a href="/about.html">About</a>
+                            <a href="/calculate.html" class="splash_navbar_contact">Calculate</a>
+                        </nav>
+                        <div class="splash_hamburger_menu">
+                            <img class="mobile_icon" src="icons/Hamburger Menu.svg" alt="Hamburger Menu">
+                            <img class="x-mark" src="icons/X Mark (1).svg" alt="Close">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Hamburger menu (Top) -->
+    
+                <div class="splash_menu_mobile">
+                    <nav class="splash_right_side_navbar_items_mobile">
+                        <a href="/about.html">About</a>
+                        <a href="/calculate.html" class="splash_navbar_contact">Calculate</a>
+                    </nav>
+                </div>
+    
+    
+    
+            </header>
+
+            <div class="fixed-price-bar">
+                <div class="price-bar-information">
+                    $<span id="final-cost-fixed">0.00</span>
+                </div>
             </div>
-            <div class="nav-links">
-                <a href="/about.html">About</a>
-                <a href="/">Contact</a>
-            </div>
-        </div>
-        <div class="nav right-side">
-            <!-- Right side has calculate button -->
-            <a href="/calculate.html">Calculate</a>
-        </div>
-    </nav>
 
     <div class="main-content calculator">
         <div class="page-title">
             <p>Select which items you think you will need to calculate your move-in cost.</p>
         </div>
         <div class="main-calculator">
-            <div class="title">
-                <h1>My Items</h1>
+            <div class="top-section">
+                <div class="title">
+                    <h2>My Items</h2>
+                </div>
+                <div class="total-cost-section">
+                    <div class="total-cost">
+                        <h2>Total cost:</h2>
+                        <div class="individual-amount">$<span id="final-cost">0.00</span></div>
+                    </div>
+                    <div class="individual-section-costs">
+                        <div class="individual-section-container">
+                            <p>Food:</p>
+                            <div class="individual-amount category">$<span
+                                    id="final-cost-food">0.00</span>
+                            </div>
+                        </div>
+                        <div class="individual-section-container">
+                            <p>Cleaning:</p>
+                            <div class="individual-amount category">$<span
+                                    id="final-cost-cleaning">0.00</span>
+                            </div>
+                        </div>
+                        <div class="individual-section-container">
+                            <p>Toiletries:</p>
+                            <div class="individual-amount category">$<span
+                                    id="final-cost-toiletries">0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="calculator-items">
                 <div class="calculator-items-section">
                     <p>Food</p>
-                    <div class="individual-items" style="display: flex;">
-                        <button class="items-container" id="ramen" value="10">
-                            <div class="item-image">Ramen Noodles</div>
-                            <div class="item-price">$10.00</div>
-                        </button>
-                        <button class="items-container" id="water" value="12">
-                            <div class="item-image">Water - Pack of 12</div>
-                            <div class="item-price">$12.00</div>
-                        </button>
+                    <div class="individual-items">
+                        <div class="container-for-products">
+                            <button class="items-container" id="ramen" value="10" data-selected="false"
+                                data-type="food">
+                                <img class="plus-icon" src="/icons/+.svg" />
+                                <img src="/images/Ramen Noodles.jpeg" />
+                            </button>
+                            <div class="product-info">
+                                <div class="item-title">Ramen Noodles</div>
+                                <div class="item-price">$10.00</div>
+                            </div>
+                        </div>
+                        <div class="container-for-products">
+                            <button class="items-container" id="water" value="12" data-selected="false"
+                                data-type="food">
+                                <img class="plus-icon" src="/icons/+.svg" />
+                                <img src="/images/Water.jpeg" />
+                            </button>
+                            <div class="product-info">
+                                <div class="item-title">Water - Pack of 12</div>
+                                <div class="item-price">$12.00</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="calculator-items-section">
                     <p>Toiletries</p>
-                    <div class="individual-items" style="display: flex;">
-                        <button class="items-container" id="toilet-paper" value="15">
-                            <div class="item-image">Toilet Paper - Pack of 12</div>
+                    <div class="individual-items">
+                        <button class="items-container" id="toilet-paper" value="15" data-selected="false"
+                            data-type="toiletries">
+                            <div class="item-title">Toilet Paper - Pack of 12</div>
                             <div class="item-price">$15.00</div>
                         </button>
-                        <button class="items-container" id="hand-soap" value="5">
-                            <div class="item-image">Hand Soap</div>
+                        <button class="items-container" id="hand-soap" value="5" data-selected="false"
+                            data-type="toiletries">
+                            <div class="item-title">Hand Soap</div>
                             <div class="item-price">$5.00</div>
                         </button>
                     </div>
                 </div>
                 <div class="calculator-items-section">
                     <p>Cleaning</p>
-                    <div class="individual-items" style="display: flex;">
-                        <button class="items-container" id="wipes" value="7">
-                            <div class="item-image">Disinfectant Wipes</div>
+                    <div class="individual-items">
+                        <button class="items-container" id="wipes" value="7" data-selected="false" data-type="cleaning">
+                            <div class="item-title">Disinfectant Wipes</div>
                             <div class="item-price">$7.00</div>
                         </button>
-                        <button class="items-container" id="paper-towels" value="20">
-                            <div class="item-image">Paper Towels - Pack of 10</div>
+                        <button class="items-container" id="paper-towels" value="20" data-selected="false"
+                            data-type="cleaning">
+                            <div class="item-title">Paper Towels - Pack of 10</div>
                             <div class="item-price">$20.00</div>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="total-cost-section">
-                <div class="total-cost" style="display: flex;">
-                    <p>Total cost</p>
-                    <div style="font-size: 30px;">$<span id="final-cost">0.00</span></div>
 
-                </div>
-                <div class="individual-section-costs">
-                    <div class="individual-section-container">
-                        <p>Food:</p>
-                        <div style="font-size: 30px;">$<span id="final-cost-food">0.00</span>
-                        </div>
-                    </div>
-                    <div class="individual-section-container">
-                        <p>Cleaning:</p>
-                        <div style="font-size: 30px;">$<span id="final-cost-cleaning">0.00</span>
-                        </div>
-                    </div>
-                    <div class="individual-section-container">
-                        <p>Toiletries:</p>
-                        <div style="font-size: 30px;">$<span id="final-cost-toiletries">0.00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    integrity = "sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="</script>
+    <script src="/js/navigationbar.js"></script>
+<script src="/js/app1.js"></script>
 
-<script src="app.js"></script>
 </html>
