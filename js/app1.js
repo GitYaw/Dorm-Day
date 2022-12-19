@@ -21,6 +21,8 @@ document.querySelectorAll('.items-container').forEach(item => {
 
 let finalCost = 0;
 let finalCostLabel = document.getElementById('final-cost')
+let finalCostFixedLabel = document.getElementById('final-cost-fixed')
+console.log(finalCostFixedLabel)
 let foodCost = 0;
 let foodCostLabel = document.getElementById('final-cost-food')
 let toiletriesCost = 0;
@@ -35,6 +37,7 @@ const CLEANING = "cleaning";
 function updateTotals(amount, section) {
     finalCost = finalCost + amount;
     finalCostLabel.innerHTML = finalCost.toFixed(2);
+    finalCostFixedLabel.innerHTML = finalCost.toFixed(2);
 
     if (section = FOOD) {
         foodCost = foodCost + amount;

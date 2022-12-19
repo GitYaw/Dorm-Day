@@ -4,7 +4,8 @@ body{
 }
 
 p {
-font-size: 17px;
+font-size: 15px;
+line-height: 21px;
 }
 
 .main-content{
