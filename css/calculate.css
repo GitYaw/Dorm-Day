@@ -12,6 +12,7 @@
 
 .total-cost {
     font-size: 45px;
+    display: flex;
 }
 
 .total-cost .individual-amount {
@@ -156,6 +157,14 @@
         text-align: center;
         font-size: 21px;
         font-weight: 600;
+        background-color: aliceblue;
+    }
+
+    .price-bar-information{
+        position: fixed;
+        left: 45%;
+        bottom: 0;
+        padding: 10px 0px;
     }
 
     .top-section {
@@ -165,6 +174,14 @@
 
     .total-cost-section{
         margin-top: 40px;
+    }
+
+    .individual-section-costs{
+        margin-top: 20px;
+    }
+
+    .total-cost {
+        font-size: 30px;
     }
 
 }
