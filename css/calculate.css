@@ -4,16 +4,17 @@
 
 /* Total costs added together */
 
-.total-cost p{
+.total-cost{
     font-size: 45px;
 }
 
-.total-cost span{
-    font-size: 45px;
+.total-cost .individual-amount{
+    color: #000000 !important;
 }
 
 .individual-section-container{
     display: flex;
+    margin-bottom: 20px;
 }
 
 .individual-section-container p{
@@ -25,7 +26,17 @@
 }
 
 .individual-amount{
+    margin-left: 10px;
     color: #707070;
+    font-weight: 600;
+    position: relative;
+    top: -10px;
+}
+
+.individual-amount.category{
+    font-size: 20px;
+    font-weight: 600;
+    top: -2px;
 }
 
 .top-section{
