@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/calculate.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/body.css">
+    <link rel="stylesheet" href="/css/navigationbar.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
@@ -15,6 +16,43 @@
 </head>
 
 <body class="body">
+
+            <!-- Navigation Bar (Top) -->
+            <header>
+                <div class="splash_navbar">
+                    <a href="/index.html" class="splash_logo">
+                        Swizo
+                    </a>
+                    <div class="splash_right_side_navbar">
+                        <nav class="splash_right_side_navbar_items">
+                            <a href="/index.html#pricing">Pricing</a>
+                            <a href="/index.html#features">Features</a>
+                            <a href="/index.html#perks">Perks</a>
+                            <a href="/blog.html">Blog</a>
+                            <a href="/index.html#contact" class="splash_navbar_contact">Join</a>
+                        </nav>
+                        <div class="splash_hamburger_menu">
+                            <img class="mobile_icon" src="icons/Hamburger Menu.svg" alt="Hamburger Menu">
+                            <img class="x-mark" src="icons/X Mark (1).svg" alt="Close">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Hamburger menu (Top) -->
+    
+                <div class="splash_menu_mobile">
+                    <nav class="splash_right_side_navbar_items_mobile">
+                        <a href="/index.html#pricing">Pricing</a>
+                        <a href="/index.html#features">Features</a>
+                        <a href="/index.html#perks">Perks</a>
+                        <a href="/blog.html">Blog</a>
+                        <a href="/index.html#contact" class="splash_navbar_contact">Join</a>
+                    </nav>
+                </div>
+    
+    
+    
+            </header>
 
     <!-- Navigation bar -->
     <nav class="navigation">
@@ -46,7 +84,7 @@
                 </div>
                 <div class="total-cost-section">
                     <div class="total-cost" style="display: flex;">
-                        <h2>Total cost</h2>
+                        <h2>Total cost:</h2>
                         <div style="font-size: 30px;" class="individual-amount">$<span id="final-cost">0.00</span></div>
 
                     </div>
@@ -136,7 +174,9 @@
 
 
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    integrity = "sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="</script>
+    <script src="/js/navigationbar.js"></script>
 <script src="/js/app1.js"></script>
 
 </html>
