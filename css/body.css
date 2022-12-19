@@ -3,6 +3,10 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 p {
 font-size: 15px;
 line-height: 21px;
