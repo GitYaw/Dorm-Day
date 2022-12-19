@@ -1,0 +1,96 @@
+.page-title{
+    margin-bottom: 40px;
+}
+
+/* Total costs added together */
+
+.total-cost p{
+    font-size: 45px;
+}
+
+.total-cost span{
+    font-size: 45px;
+}
+
+.individual-section-container{
+    display: flex;
+}
+
+.individual-section-container p{
+    font-size: 17px;
+}
+
+.individual-section-container span{
+    font-size: 17px;
+}
+
+.individual-amount{
+    color: #707070;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+/* Calculator categories */
+
+.calculator-items{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.calculator-items-section{
+    margin-bottom: 20px;
+}
+
+.calculator-items-section p{
+    color: #707070;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.individual-items{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+/* Individual items */
+
+.items-container {
+    cursor: pointer;
+    margin: 0px 15px 20px 0px;
+    padding: 0px 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.items-container:hover{
+    opacity: 0.7;
+}
+
+.items-container img{
+width: 100px;
+}
+
+.plus-icon{
+    width: 20px !important;
+    position: relative;
+    right: 20px;
+    bottom: 90px;
+}
+
+.product-info{
+    color: #000000;
+}
+
+.item-title{
+    margin-bottom: 10px;
+}
+
+.item-price{
+    font-weight: 600;
+}

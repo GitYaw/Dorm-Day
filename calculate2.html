@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/css/calculate.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/body.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -37,28 +42,31 @@
         <div class="main-calculator">
             <div class="top-section">
                 <div class="title">
-                    <h1>My Items</h1>
+                    <h2>My Items</h2>
                 </div>
                 <div class="total-cost-section">
                     <div class="total-cost" style="display: flex;">
-                        <p>Total cost</p>
-                        <div style="font-size: 30px;">$<span id="final-cost">0.00</span></div>
-    
+                        <h2>Total cost</h2>
+                        <div style="font-size: 30px;" class="individual-amount">$<span id="final-cost">0.00</span></div>
+
                     </div>
                     <div class="individual-section-costs">
                         <div class="individual-section-container">
                             <p>Food:</p>
-                            <div style="font-size: 30px;">$<span id="final-cost-food">0.00</span>
+                            <div style="font-size: 30px;" class="individual-amount">$<span
+                                    id="final-cost-food">0.00</span>
                             </div>
                         </div>
                         <div class="individual-section-container">
                             <p>Cleaning:</p>
-                            <div style="font-size: 30px;">$<span id="final-cost-cleaning">0.00</span>
+                            <div style="font-size: 30px;" class="individual-amount">$<span
+                                    id="final-cost-cleaning">0.00</span>
                             </div>
                         </div>
                         <div class="individual-section-container">
                             <p>Toiletries:</p>
-                            <div style="font-size: 30px;">$<span id="final-cost-toiletries">0.00</span>
+                            <div style="font-size: 30px;" class="individual-amount">$<span
+                                    id="final-cost-toiletries">0.00</span>
                             </div>
                         </div>
                     </div>
@@ -67,15 +75,29 @@
             <div class="calculator-items">
                 <div class="calculator-items-section">
                     <p>Food</p>
-                    <div class="individual-items" style="display: flex;">
-                        <button class="items-container" id="ramen" value="10" data-selected="false" data-type="food">
-                            <div class="item-image">Ramen Noodles</div>
-                            <div class="item-price">$10.00</div>
-                        </button>
-                        <button class="items-container" id="water" value="12" data-selected="false" data-type="food">
-                            <div class="item-image">Water - Pack of 12</div>
-                            <div class="item-price">$12.00</div>
-                        </button>
+                    <div class="individual-items">
+                        <div class="container-for-products">
+                            <button class="items-container" id="ramen" value="10" data-selected="false"
+                                data-type="food">
+                                <img class="plus-icon" src="/icons/+.svg" />
+                                <img src="/images/Ramen Noodles.jpeg" />
+                            </button>
+                            <div class="product-info">
+                                <div class="item-title">Ramen Noodles</div>
+                                <div class="item-price">$10.00</div>
+                            </div>
+                        </div>
+                        <div class="container-for-products">
+                            <button class="items-container" id="water" value="12" data-selected="false"
+                                data-type="food">
+                                <img class="plus-icon" src="/icons/+.svg" />
+                                <img src="/images/Water.jpeg" />
+                            </button>
+                            <div class="product-info">
+                                <div class="item-title">Water - Pack of 12</div>
+                                <div class="item-price">$12.00</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="calculator-items-section">
@@ -83,12 +105,12 @@
                     <div class="individual-items" style="display: flex;">
                         <button class="items-container" id="toilet-paper" value="15" data-selected="false"
                             data-type="toiletries">
-                            <div class="item-image">Toilet Paper - Pack of 12</div>
+                            <div class="item-title">Toilet Paper - Pack of 12</div>
                             <div class="item-price">$15.00</div>
                         </button>
                         <button class="items-container" id="hand-soap" value="5" data-selected="false"
                             data-type="toiletries">
-                            <div class="item-image">Hand Soap</div>
+                            <div class="item-title">Hand Soap</div>
                             <div class="item-price">$5.00</div>
                         </button>
                     </div>
@@ -97,12 +119,12 @@
                     <p>Cleaning</p>
                     <div class="individual-items" style="display: flex;">
                         <button class="items-container" id="wipes" value="7" data-selected="false" data-type="cleaning">
-                            <div class="item-image">Disinfectant Wipes</div>
+                            <div class="item-title">Disinfectant Wipes</div>
                             <div class="item-price">$7.00</div>
                         </button>
                         <button class="items-container" id="paper-towels" value="20" data-selected="false"
                             data-type="cleaning">
-                            <div class="item-image">Paper Towels - Pack of 10</div>
+                            <div class="item-title">Paper Towels - Pack of 10</div>
                             <div class="item-price">$20.00</div>
                         </button>
                     </div>

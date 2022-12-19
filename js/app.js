@@ -29,6 +29,8 @@ let papertowelscost = parseInt(papertowels.value);
 let finalcost = document.getElementById('final-cost');
 let finalcostValue = finalcost.innerHTML;
 
+let newfinalcost = 0;
+
 // These functions are saying: "If the button is clicked, set the changed variable to the opposite of what it was before (change it from false to true)." Then we are saying: "If it's true that it's clicked, add that price to the total cost, but if it's false, subtract it from itself to make it 0 (Ex: 10 - 10 = 0)."
 ramen.addEventListener('click', function () {
     ramenchanged = !ramenchanged;
