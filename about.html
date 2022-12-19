@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="/css/calculate.css">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/body.css">
+        <link rel="stylesheet" href="/css/navigationbar.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
 <body class="body">
-    <!-- Navigation bar -->
-    <nav class="navigation">
-        <!-- Put in two divs, or "containers", to separate left and right side information" -->
-        <div class="nav left-side">
-            <!-- Left side has logo and links -->
-            <div class="logo">
-                <a href="/index.html">Logo</a>
-            </div>
-            <div class="nav-links">
+ <!-- Navigation Bar (Top) -->
+ <header>
+    <div class="splash_navbar">
+        <a href="/index.html" class="splash_logo">
+           Logo
+        </a>
+        <div class="splash_right_side_navbar">
+            <nav class="splash_right_side_navbar_items">
                 <a href="/about.html">About</a>
-                <a href="/">Contact</a>
+                <a href="/calculate2.html" class="splash_navbar_contact">Calculate</a>
+            </nav>
+            <div class="splash_hamburger_menu">
+                <img class="mobile_icon" src="icons/Hamburger Menu.svg" alt="Hamburger Menu">
+                <img class="x-mark" src="icons/X Mark (1).svg" alt="Close">
             </div>
         </div>
-        <div class="nav right-side">
-            <!-- Right side has calculate button -->
-            <a href="/calculate.html">Calculate</a>
-        </div>
-    </nav>
+    </div>
+
+    <!-- Hamburger menu (Top) -->
+
+    <div class="splash_menu_mobile">
+        <nav class="splash_right_side_navbar_items_mobile">
+            <a href="/about.html">About</a>
+            <a href="/calculate2.html" class="splash_navbar_contact">Calculate</a>
+        </nav>
+    </div>
+
+
+
+</header>
 
     <!-- Hero section -->
     <div class="main-content about">
@@ -54,6 +73,9 @@
     </div>
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    integrity = "sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="</script>
+    <script src="/js/navigationbar.js"></script>
 <script src="app.js"></script>
 
 </html>
