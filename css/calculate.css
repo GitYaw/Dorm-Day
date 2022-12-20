@@ -1,0 +1,187 @@
+.page-title {
+    margin-bottom: 40px;
+}
+
+/* Our fixed price bar on mobile */
+
+.fixed-price-bar {
+    display: none;
+}
+
+/* Total costs added together */
+
+.total-cost {
+    font-size: 45px;
+    display: flex;
+}
+
+.total-cost .individual-amount {
+    color: #000000 !important;
+}
+
+.individual-section-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.individual-section-container p {
+    font-size: 17px;
+}
+
+.individual-section-container span {
+    font-size: 17px;
+}
+
+.individual-amount {
+    margin-left: 10px;
+    color: #707070;
+    font-weight: 600;
+    position: relative;
+    top: -10px;
+}
+
+.individual-amount.category {
+    font-size: 20px;
+    font-weight: 600;
+    top: -2px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+/* Calculator categories (Food, Toiletries, Cleaning) */
+
+.calculator-items {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.calculator-items-section {
+    margin-bottom: 40px;
+}
+
+.calculator-items-section p {
+    color: #707070;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.individual-items {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+/* Individual items */
+.container-for-products {
+    margin-right: 20px;
+}
+
+.items-container {
+    cursor: pointer;
+    margin: 0px 15px 20px 0px;
+    padding: 0px 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.items-container:hover {
+    opacity: 0.7;
+}
+
+.items-container img {
+    width: 100px;
+}
+
+.plus-icon {
+    width: 20px !important;
+    position: relative;
+    right: 20px;
+    bottom: 90px;
+}
+
+.product-info {
+    color: #000000;
+}
+
+.item-title {
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 750px) {
+    .calculator-items {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .items-container {
+        margin: 0px 15px 20px 0px;
+        padding: 0px 20px;
+        width: 110px;
+        height: 150px;
+    }
+
+    .items-container:hover {
+        opacity: 0.7;
+    }
+
+    .items-container img {
+        width: 75px;
+    }
+
+    .plus-icon {
+        width: 17px !important;
+        position: relative;
+        right: 40px;
+        bottom: 10px;
+    }
+
+    .fixed-price-bar {
+        background: #ffffff;
+        color: #588ac7;
+        display: block;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 50px;
+        width: 100vh;
+        box-shadow: 0px 3.65591px 3.65591px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        font-size: 21px;
+        font-weight: 600;
+        background-color: aliceblue;
+    }
+
+    .price-bar-information{
+        position: fixed;
+        left: 45%;
+        bottom: 0;
+        padding: 10px 0px;
+    }
+
+    .top-section {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .total-cost-section{
+        margin-top: 40px;
+    }
+
+    .individual-section-costs{
+        margin-top: 20px;
+    }
+
+    .total-cost {
+        font-size: 30px;
+    }
+
+}

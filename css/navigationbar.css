@@ -1,0 +1,162 @@
+
+/* Navigation Bar (Top) */
+
+.splash_navbar {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background: #e7ecff;
+    /* display: flex; */
+    align-items: center;
+    z-index: 10;
+
+    backdrop-filter: blur(5px) saturate(20%);
+    -webkit-backdrop-filter: blur(5px) saturate(20%);
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.15));
+}
+
+.splash_logo {
+    padding-left: 30px;
+    width: 50%;
+    position: relative;
+    top: 25px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+.splash_right_side_navbar {
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 25px;
+}
+
+nav a {
+    font-weight: 600;
+    padding: 0px 10px;
+    justify-content: space-between;
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+.splash_right_side_navbar_items {
+    display: block;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.splash_hamburger_menu {
+    display: none;
+}
+
+.x-mark{
+    width: 30px;
+    height: 25px;
+    position: relative;
+    right: 5px;
+    top: -5px;
+    display: none;
+}
+
+.splash_navbar_contact {
+    padding: 7px 35px;
+    background: #444dc7;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+/* Hamburger menu */
+
+.splash_menu_mobile{
+    background: #000000;
+    color:#ffffff;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    animation-name: fadeinnavbar;
+    animation-duration: 0.5s;
+    display: none;
+}
+
+.splash_right_side_navbar_items_mobile{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30%;
+    justify-content: center;
+    text-align: center;
+}
+
+.splash_right_side_navbar_items_mobile a{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.splash_right_side_navbar_items_mobile a:hover{
+    text-decoration: underline;
+}
+
+.splash_navbar_contact.mobile{
+    width: 110px;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 250px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeinnavbar {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    /* Navigation Bar (Top) */
+
+    .splash_right_side_navbar_items {
+        display: none;
+    }
+
+    .splash_logo {
+        width: 80%;
+    }
+
+    .splash_hamburger_menu {
+        display: block;
+        cursor: pointer;
+    }
+
+nav a {
+    color: #ffffff;
+}
+
+    .splash_menu_mobile.active{
+        display: block;
+    }
+    
+    .x-mark.active{
+        display: block;
+    }
+}
