@@ -2,7 +2,7 @@ const True = "true";
 const False = "false";
 let itemContainer = document.querySelectorAll('.items-container');
 let plusIcon = document.querySelectorAll('.plus-icon');
-let plusIcon = document.querySelectorAll('.plus-icon');
+let minusIcon = document.querySelectorAll('.minus-icon');
 
 
 document.querySelectorAll('.items-container').forEach(item => {
@@ -11,15 +11,25 @@ document.querySelectorAll('.items-container').forEach(item => {
         if (item.dataset.selected == False) {
             item.dataset.selected = True;
             amount = parseInt(item.value);
+            item.style.opacity = '0.3';
+     
         } else {
             amount = parseInt(-1 * item.value)
             item.dataset.selected = False;
+            item.style.opacity = '1';
         }
 
         let section = item.dataset.type;
         updateTotals(amount, section);
     })
 })
+
+// document.querySelectorAll('.plus-icon').forEach(plusIcon => {
+//     item.addEventListener('click', event => {
+
+//     })
+// })
+
 
 let finalCost = 0;
 let finalCostLabel = document.getElementById('final-cost')
