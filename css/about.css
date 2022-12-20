@@ -1,0 +1,32 @@
+
+.contact p{
+    font-weight: 700;
+}
+
+.name_title{
+    font-size: 20px;
+    margin: 5px 0px 10px 0px;
+}
+
+.contact-information{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.contact-information a{
+    color: #454545;
+    cursor: pointer;
+}
+
+.contact-information a:hover{
+    text-decoration: underline;
+}
+
+.contact-link{
+    display: flex;
+}
+
+.contact-link:first-child{
+    margin-right: 10px;
+}
