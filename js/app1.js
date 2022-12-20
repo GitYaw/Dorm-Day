@@ -50,6 +50,7 @@ function updateTotals(amount, section) {
     finalCost = finalCost + amount;
     finalCostLabel.innerHTML = finalCost.toFixed(2);
     finalCostFixedLabel.innerHTML = finalCost.toFixed(2);
+    console.log(finalCostFixedLabel.innerHTML)
 
     if (section == FOOD) {
         foodCost = foodCost + amount;
