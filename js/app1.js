@@ -16,8 +16,6 @@ document.querySelectorAll('.items-container').forEach(item => {
             item.dataset.selected = False;
         }
 
-        console.log(amount);
-        console.log(item);
         let section = item.dataset.type;
         updateTotals(amount, section);
     })
@@ -43,13 +41,13 @@ function updateTotals(amount, section) {
     finalCostLabel.innerHTML = finalCost.toFixed(2);
     finalCostFixedLabel.innerHTML = finalCost.toFixed(2);
 
-    if (section = FOOD) {
+    if (section == FOOD) {
         foodCost = foodCost + amount;
         foodCostLabel.innerHTML = foodCost.toFixed(2);
-    } else if (section = TOILETRIES) {
+    } else if (section == TOILETRIES) {
         toiletriesCost = toiletriesCost + amount;
         toiletriesCostLabel.innerHTML = toiletriesCost.toFixed(2);
-    } else if (section = CLEANING) {
+    } else if (section == CLEANING) {
         cleaningCost = cleaningCost + amount;
         cleaningCostLabel.innerHTML = cleaningCost.toFixed(2);
     }
