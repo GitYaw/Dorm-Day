@@ -1,32 +1,54 @@
+.page-title.alternate p {
+    width: 70%;
+    line-height: 25px;
+}
 
-.contact p{
+.contact p {
     font-weight: 700;
 }
 
-.name_title{
+.name_title {
     font-size: 20px;
     margin: 5px 0px 10px 0px;
 }
 
-.contact-information{
+.contact-information {
     display: flex;
-    width: 500px;
+    width: 550px;
     justify-content: space-between;
 }
 
-.contact-information a{
+.contact-information a {
     color: #454545;
     cursor: pointer;
+    font-size: 15px;
 }
 
-.contact-information a:hover{
+.contact-information a:hover {
     text-decoration: underline;
 }
 
-.contact-link{
+.contact-link {
     display: flex;
 }
 
-.contact-link:first-child{
-    margin-right: 10px;
+.contact-link p {
+    margin-right: 5px;
+    position: relative;
+    top: -2px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 750px) {
+    .page-title.alternate p {
+        width: 90%;
+    }
+
+    .contact-information {
+        flex-direction: column;
+    }
+
+    .contact {
+        margin-bottom: 40px;
+    }
 }
