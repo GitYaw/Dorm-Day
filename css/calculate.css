@@ -144,6 +144,14 @@
         bottom: 10px;
     }
 
+    .minus-icon {
+        width: 17px !important;
+        position: relative;
+        right: 40px;
+        bottom: 10px;
+        display: none;
+    }
+
     .fixed-price-bar {
         background: #ffffff;
         color: #588ac7;

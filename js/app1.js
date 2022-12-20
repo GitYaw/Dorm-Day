@@ -1,5 +1,9 @@
 const True = "true";
 const False = "false";
+let itemContainer = document.querySelectorAll('.items-container');
+let plusIcon = document.querySelectorAll('.plus-icon');
+let plusIcon = document.querySelectorAll('.plus-icon');
+
 
 document.querySelectorAll('.items-container').forEach(item => {
     item.addEventListener('click', event => {
