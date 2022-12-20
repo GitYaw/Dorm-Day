@@ -158,13 +158,14 @@
         font-size: 21px;
         font-weight: 600;
         background-color: aliceblue;
+        z-index: 10;
     }
 
     .price-bar-information{
         position: fixed;
-        left: 45%;
+        left: 37%;
         bottom: 0;
-        padding: 10px 0px;
+        padding: 15px 0px;
     }
 
     .top-section {
@@ -182,6 +183,10 @@
 
     .total-cost {
         font-size: 30px;
+    }
+
+    .individual-amount {
+        top: -5px;
     }
 
 }
