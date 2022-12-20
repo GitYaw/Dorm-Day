@@ -97,8 +97,11 @@ nav a {
 }
 
 .splash_right_side_navbar_items_mobile a{
-    margin-bottom: 30px;
     cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px 0px;
 }
 
 .splash_right_side_navbar_items_mobile a:hover{
