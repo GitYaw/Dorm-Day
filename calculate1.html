@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/calculate1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -34,8 +35,34 @@
             <p>Select which items you think you will need to calculate your move-in cost.</p>
         </div>
         <div class="main-calculator">
-            <div class="title">
-                <h1>My Items</h1>
+            <div class="top-section">
+                <div class="title">
+                    <h1>My Items</h1>
+                </div>
+                <div class="total-cost-section">
+                    <div class="total-cost" style="display: flex;">
+                        <p>Total cost</p>
+                        <div style="font-size: 30px;">$<span id="final-cost">0.00</span></div>
+
+                    </div>
+                    <div class="individual-section-costs">
+                        <div class="individual-section-container">
+                            <p>Food:</p>
+                            <div style="font-size: 30px;">$<span id="final-cost-food">0.00</span>
+                            </div>
+                        </div>
+                        <div class="individual-section-container">
+                            <p>Cleaning:</p>
+                            <div style="font-size: 30px;">$<span id="final-cost-cleaning">0.00</span>
+                            </div>
+                        </div>
+                        <div class="individual-section-container">
+                            <p>Toiletries:</p>
+                            <div style="font-size: 30px;">$<span id="final-cost-toiletries">0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="calculator-items">
                 <div class="calculator-items-section">
@@ -54,11 +81,13 @@
                 <div class="calculator-items-section">
                     <p>Toiletries</p>
                     <div class="individual-items" style="display: flex;">
-                        <button class="items-container" id="toilet-paper" value="15" data-selected="false" data-type="toiletries">
+                        <button class="items-container" id="toilet-paper" value="15" data-selected="false"
+                            data-type="toiletries">
                             <div class="item-image">Toilet Paper - Pack of 12</div>
                             <div class="item-price">$15.00</div>
                         </button>
-                        <button class="items-container" id="hand-soap" value="5" data-selected="false" data-type="toiletries">
+                        <button class="items-container" id="hand-soap" value="5" data-selected="false"
+                            data-type="toiletries">
                             <div class="item-image">Hand Soap</div>
                             <div class="item-price">$5.00</div>
                         </button>
@@ -71,34 +100,11 @@
                             <div class="item-image">Disinfectant Wipes</div>
                             <div class="item-price">$7.00</div>
                         </button>
-                        <button class="items-container" id="paper-towels" value="20" data-selected="false" data-type="cleaning">
+                        <button class="items-container" id="paper-towels" value="20" data-selected="false"
+                            data-type="cleaning">
                             <div class="item-image">Paper Towels - Pack of 10</div>
                             <div class="item-price">$20.00</div>
                         </button>
-                    </div>
-                </div>
-            </div>
-            <div class="total-cost-section">
-                <div class="total-cost" style="display: flex;">
-                    <p>Total cost</p>
-                    <div style="font-size: 30px;">$<span id="final-cost">0.00</span></div>
-
-                </div>
-                <div class="individual-section-costs">
-                    <div class="individual-section-container">
-                        <p>Food:</p>
-                        <div style="font-size: 30px;">$<span id="final-cost-food">0.00</span>
-                        </div>
-                    </div>
-                    <div class="individual-section-container">
-                        <p>Cleaning:</p>
-                        <div style="font-size: 30px;">$<span id="final-cost-cleaning">0.00</span>
-                        </div>
-                    </div>
-                    <div class="individual-section-container">
-                        <p>Toiletries:</p>
-                        <div style="font-size: 30px;">$<span id="final-cost-toiletries">0.00</span>
-                        </div>
                     </div>
                 </div>
             </div>
