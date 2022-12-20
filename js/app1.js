@@ -41,7 +41,6 @@ function updateTotals(amount, section) {
         foodCost = foodCost + amount;
         foodCostLabel.innerHTML = foodCost.toFixed(2);
     } else if (section == TOILETRIES) {
-        console.log(TOILETRIES);
         toiletriesCost = toiletriesCost + amount;
         toiletriesCostLabel.innerHTML = toiletriesCost.toFixed(2);
     } else if (section == CLEANING) {
