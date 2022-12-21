@@ -1,8 +1,8 @@
 const True = "true";
 const False = "false";
-let itemContainer = document.querySelectorAll('.items-container');
-let plusIcon = document.querySelectorAll('.plus-icon');
-let minusIcon = document.querySelectorAll('.minus-icon');
+// let itemContainer = document.querySelectorAll('.items-container');
+// let plusIcon = document.querySelectorAll('.plus-icon');
+// let minusIcon = document.querySelectorAll('.minus-icon');
 
 
 document.querySelectorAll('.items-container').forEach(item => {
