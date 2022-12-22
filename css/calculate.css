@@ -89,9 +89,9 @@
     height: 150px;
 }
 
-.items-container:hover {
+/* .items-container:hover {
     opacity: 0.7;
-}
+} */
 
 .items-container img {
     width: 100px;

@@ -1,0 +1,239 @@
+li{
+    list-style: none;
+  }
+
+  .main_content{
+    padding: 20px 70px 100px 30px;
+    /* height: 100vh; */
+  }
+
+  .main_content h1{
+      margin-bottom: 20px;
+      font-size: 35px;
+      font-weight: 700;
+  }
+
+  .main_content h2{
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+.main_content h3{
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 40px;
+    max-width: 900px;
+}
+
+.main_content h4{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.main_content a{
+  color: inherit;
+}
+
+.learn_more_link{
+  background: #000000;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-weight: 500;
+  width: 100px;
+}
+
+.learn_more_link a{
+  text-decoration: none !important;
+}
+
+.main_content p{
+    line-height: 25px;
+}
+
+  .main_content_paragraph{
+      width: 700px;
+      font-size: 17px;
+  }
+
+  .main_content_paragraph p{
+    margin-top: 40px;
+    line-height: 25px;
+  }
+
+  .main_content_paragraph a{
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .main_content ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+
+  .main_content li{
+    /* list-style: disc; */
+    margin: 10px 0px;
+  }
+
+  .emptycontainer{
+    height: 520px;
+  }
+
+  .tutorial_information{
+    width: 70%;
+  }
+
+  .tutorial_information p{
+    font-weight: 600;
+  }
+
+  .tutorial_information li{
+    margin: 15px 0px;
+    line-height: 30px;
+  }
+
+
+
+   /* Blog */
+
+   .blogcontent{
+    padding-top: 0px;
+  }
+
+  .blogcontent li{
+    list-style: none;
+    margin: 40px 0px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .blogcontent ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
+  .blogcontent p{
+    margin:0px;
+  }
+
+  /* Individual blog */
+
+  .blogarticle{
+    padding: 40px 15%;
+  }
+
+  .blog_paragraph{
+    margin: 30px 0px;
+  }
+
+  .blog_paragraph p{
+    font-weight: 400;
+  }
+
+  .blog_paragraph a{
+    font-weight: 700;
+  }
+
+  .blog_paragraph h2{
+   font-size: 21px;
+   font-weight: 700;
+   }
+
+  .blog_paragraph h3{
+   font-weight: 700;
+  }
+  
+  .blog_paragraph a{
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .codesection{
+    margin: 30px 0px;
+    display: block;
+    font-size: 17px;
+  }
+
+  .appdescription h2{
+    line-height: 30px;
+    font-size: 17px;
+  }
+
+  .appdescription a{
+    color: #5c5c5c;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .appdescription a:hover{
+    opacity: 0.4;
+  }
+
+  .imagecontainer a{
+    max-width: 500px;
+    display: flex;
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    margin-top: 50px;
+    margin-bottom: 70px;
+    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.35));
+  }
+
+  .imagecontainer p{
+    font-size: 15px;
+  }
+
+.imagecontainer a:hover{
+    opacity: 0.4;
+  }
+
+  .appdescription_link a{
+    text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 17px;
+  padding: 7px 40px;
+  background-color: #F77171;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 21.1348px;
+  transition: all 0.3s ease-in-out;
+  }
+
+  .appdescription_link a:hover {
+    background-color: #d15757;
+    opacity: 1;
+  }
+
+
+  @media only screen and (max-width: 750px) {
+    .main_content_paragraph{
+      width: 90%;
+  }
+
+  .tutorial_information{
+    width: 100%;
+  }
+
+  .blogarticle{
+    padding: 40px 5%;
+  }
+  }
+
+
+ 

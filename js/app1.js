@@ -12,6 +12,7 @@ document.querySelectorAll('.items-container').forEach(item => {
             item.dataset.selected = True;
             amount = parseInt(item.value);
             item.style.opacity = '0.3';
+
      
         } else {
             amount = parseInt(-1 * item.value)
@@ -21,6 +22,19 @@ document.querySelectorAll('.items-container').forEach(item => {
 
         let section = item.dataset.type;
         updateTotals(amount, section);
+    })
+    
+    item.addEventListener('mouseover', event => {
+            if (item.dataset.selected == False) {
+            item.style.opacity = '0.7';
+        } 
+    })
+
+   
+   item.addEventListener('mouseout', event => {
+        if (item.dataset.selected == False) {
+            item.style.opacity = '1';
+        }
     })
 })
 

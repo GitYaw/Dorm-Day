@@ -1,3 +1,7 @@
+.main-content.about{
+    margin-bottom: 200px;
+}
+
 .page-title.alternate p {
     width: 70%;
     line-height: 25px;
@@ -14,8 +18,19 @@
 
 .contact-information {
     display: flex;
-    width: 550px;
+    width: 600px;
     justify-content: space-between;
+}
+
+.contact{
+    max-width: 240px;
+    max-height: 500px;
+}
+
+.contact img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 .contact-information a {
